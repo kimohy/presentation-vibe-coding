@@ -4,7 +4,7 @@
 :root {
   --bg-color: #0b0c10;
   --text-main: #f0f0f0;
-  --text-muted: #a0aab8;
+  --text-muted: #cbd5e1;
   --accent-primary: #6ee7b7;
   --accent-secondary: #3b82f6;
   --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
@@ -114,6 +114,7 @@ h1, h2, h3 {
 
 .title-gradient {
   background: var(--accent-gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -126,6 +127,29 @@ h3 { font-size: 1.7rem; color: var(--accent-primary); margin-top: 1.2rem; }
 p { font-size: 1.2rem; line-height: 1.75; margin-bottom: 1.2rem; color: var(--text-muted); }
 ul { margin-left: 2rem; margin-bottom: 1.8rem; color: var(--text-muted); font-size: 1.15rem; line-height: 1.75; }
 li { margin-bottom: 0.6rem; }
+
+.quiz-choices {
+  display: inline-block;
+  text-align: left;
+  list-style: none;
+  margin-bottom: 2.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fff;
+}
+.quiz-choices li {
+  margin-bottom: 1.2rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+.quiz-choices li:hover {
+  background: rgba(255,255,255,0.08);
+  border-left: 3px solid var(--accent-secondary);
+  transform: translateX(5px);
+}
 
 /* Timeline CSS (For Slide 2) */
 .timeline {
@@ -201,6 +225,12 @@ li { margin-bottom: 0.6rem; }
   padding: 2.2rem;
   height: 100%;
   transition: all 0.3s ease;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card:hover {
   background: rgba(255, 255, 255, 0.06);
@@ -319,3 +349,46 @@ blockquote {
   line-height: 1.8;
   color: #fff;
 }
+
+/* Image Zoom Modal */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-modal.show {
+  display: flex;
+  opacity: 1;
+}
+.modal-img-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+.image-modal.show .modal-img-content {
+  transform: scale(1);
+}
+.close-modal {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.close-modal:hover { color: var(--accent-primary); }

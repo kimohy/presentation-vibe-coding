@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vibe Coding Presentation</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
   
@@ -18,7 +18,7 @@
         <h1 class="title-gradient">Vibe Coding 시대의 개막</h1>
         <div class="quiz-reveal">
           <h2>Q. "Vibe coding"의 창시자는 누구인가요?</h2>
-          <ul style="display: inline-block; text-align: left; list-style: none; margin-bottom: 2.5rem;">
+          <ul class="quiz-choices">
             <li>1. 일론 머스크 (Elon Musk)</li>
             <li>2. 앤드류 응 (Andrew Ng)</li>
             <li>3. 안드레이 카파시 (Andrej Karpathy)</li>
@@ -43,12 +43,12 @@
       <div class="glass-container" style="max-width: 1400px; width: 95%;">
         <h2 class="title-gradient">AI 코딩의 진화: 도구와 트렌드의 흐름 (2025-2026)</h2>
         
-        <div class="timeline-v2" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 2rem;">
+        <div class="timeline-v2" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 2rem;">
           
           <!-- Phase 1 -->
           <div class="timeline-phase">
             <div class="phase-header" style="background: rgba(59, 130, 246, 0.2); padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid var(--accent-secondary);">
-              <span style="font-size: 0.9rem; font-weight: 700; color: var(--accent-secondary);">Phase 1: 에이전트의 태동</span>
+              <span style="font-size: 0.9rem; font-weight: 700; color: var(--accent-secondary);">👶 Phase 1: 에이전트의 태동</span>
               <h4 style="margin: 0.5rem 0; font-size: 1.2rem;">2025년 상반기</h4>
               <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">"채팅 보조에서 CLI 실행으로"</p>
             </div>
@@ -62,7 +62,7 @@
           <!-- Phase 2 -->
           <div class="timeline-phase">
             <div class="phase-header" style="background: rgba(110, 231, 183, 0.2); padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid var(--accent-primary);">
-              <span style="font-size: 0.9rem; font-weight: 700; color: var(--accent-primary);">Phase 2: 자율성의 확장</span>
+              <span style="font-size: 0.9rem; font-weight: 700; color: var(--accent-primary);">🧑‍💻 Phase 2: 자율성의 확장</span>
               <h4 style="margin: 0.5rem 0; font-size: 1.2rem;">2025년 중반~하반기</h4>
               <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">"계획(Plan)하고 실행하라"</p>
             </div>
@@ -76,7 +76,7 @@
           <!-- Phase 3 -->
           <div class="timeline-phase">
             <div class="phase-header" style="background: rgba(245, 158, 11, 0.2); padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #f59e0b;">
-              <span style="font-size: 0.9rem; font-weight: 700; color: #f59e0b;">Phase 3: 네이티브 IDE의 시대</span>
+              <span style="font-size: 0.9rem; font-weight: 700; color: #f59e0b;">🛠️ Phase 3: 네이티브 IDE의 시대</span>
               <h4 style="margin: 0.5rem 0; font-size: 1.2rem;">2025년 말~2026년 초</h4>
               <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">"에이전트 중심의 UI 재편"</p>
             </div>
@@ -90,7 +90,7 @@
           <!-- Phase 4 -->
           <div class="timeline-phase">
             <div class="phase-header" style="background: rgba(168, 85, 247, 0.2); padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; border-left: 4px solid #a855f7;">
-              <span style="font-size: 0.9rem; font-weight: 700; color: #a855f7;">Phase 4: 병렬성과 미니멀리즘</span>
+              <span style="font-size: 0.9rem; font-weight: 700; color: #a855f7;">🤖 Phase 4: 병렬성과 미니멀리즘</span>
               <h4 style="margin: 0.5rem 0; font-size: 1.2rem;">2026년 현재</h4>
               <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">"다중 에이전트와 핵심 철학"</p>
             </div>
@@ -137,7 +137,8 @@
               <h3 style="margin: 0;">1. 랄프 루프 & SDD</h3>
               <img src="https://beyond.addy.ie/trends-2026/ralph-loop.webp" 
                    alt="Ralph Loop Diagram" 
-                   style="width: 240px; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
+                   class="zoomable-img"
+                   style="width: 240px; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); cursor: zoom-in;">
             </div>
             <p>2026년 가장 뜨거운 AI 코딩 기법.<br><b>Spec-Driven Development(SDD)</b>와 결합된 무한 루프입니다.</p>
             <code>while :; do cat SPEC.md | agent ; done</code>
@@ -263,12 +264,12 @@
         
         <div class="grid-2">
           <div class="card">
-            <h3 style="color: #ef4444;">슬롯머신이 된 에디터</h3>
+            <h3 style="color: #ef4444;">🎰 슬롯머신이 된 에디터</h3>
             <p>명령하고 대기하고 보상을 받는 구조는<br>극도의 중독성을 유발합니다.<br>
             AI 코딩은 종종 "생각 후 작성"이 아닌<br><b>"돌려놓고 잭팟 기대하기"</b> 형태의<br>도박적 반복으로 변질되기도 합니다.</p>
           </div>
           <div class="card">
-            <h3 style="color: #f59e0b;">창의성과 영혼의 상실</h3>
+            <h3 style="color: #f59e0b;">🎭 창의성과 영혼의 상실</h3>
             <p>직접 문제를 해결하고 구조를 이해하는<br>즐거움을 AI가 빼앗아갑니다.<br>
             개발자는 AI가 만든 불완전한 코드를 메꾸는<br><b>유지보수 담당</b>으로 전락할 위험이 큽니다.</p>
           </div>
@@ -283,60 +284,57 @@
     </div>
 
     <!-- Slide 6: Personal Project Experience -->
-    <div class="slide">
-      <div class="glass-container" style="max-width: 1200px;">
-        <h2 class="title-gradient">개인 프로젝트 경험: Vibe Coding의 위력</h2>
+    <div class="slide" style="align-items: flex-start; padding-top: 4rem;">
+      <div class="glass-container" style="max-width: 1400px; max-height: 85vh; width: 95%;">
+        <h2 class="title-gradient" style="margin-bottom: 2rem;">실전 사례: Vibe Coding의 파급력</h2>
         
-        <div style="display: flex; flex-direction: column; gap: 2.5rem; margin-top: 1rem;">
+        <div style="display: flex; flex-direction: column; gap: 3rem; padding-bottom: 2rem;">
           
-          <!-- Top: User's Project -->
-          <div style="display: flex; gap: 2.5rem; align-items: center; padding-bottom: 2.5rem; border-bottom: 1px dashed rgba(255,255,255,0.15);">
-            <div style="flex: 1;">
-              <h3 style="margin-top: 0; color: var(--accent-primary);">나의 프로젝트: 캠핑장 알림 서비스 (25.11~)</h3>
-              <p style="font-size: 1.15rem; line-height: 1.6;">
-                코드 작성의 전권을 AI에 위임하며 진행.<br>
-                <code>AGENTS.md</code>와 <code>TODO.md</code> 중심의 <b>'Vibe Control'</b>로만 방향을 제어했습니다.
-              </p>
-              <div style="margin: 1.2rem 0;">
-                <a href="https://camp.kimohy.kr/" target="_blank" style="color: #fff; text-decoration: none; font-weight: 700; font-size: 1.2rem; background: var(--accent-gradient); padding: 0.6rem 1.2rem; border-radius: 8px; display: inline-block;">🔗 camp.kimohy.kr</a>
-              </div>
-              <p style="font-size: 1.1rem; opacity: 0.8;">
-                개발자는 실제 코드를 거의 확인하지 않고, <b>상위 기획 문서</b>만 업데이트하며 기능을 지속적으로 확장했습니다.
-              </p>
+          <!-- Phase 1 -->
+          <div style="display: flex; gap: 2rem; align-items: stretch;">
+            <div style="flex: 1; background: rgba(255,255,255,0.03); border-radius: 16px; padding: 2.5rem; border-left: 4px solid var(--accent-secondary);">
+              <h3 style="color: var(--accent-secondary); margin-top: 0;">1. 초기 프로토타입: 문서 중심의 개발</h3>
+              <p style="font-size: 1.15rem; line-height: 1.7; margin-bottom: 1.5rem;">코드 작성의 전권을 AI에 위임하고, 오직 <code>PRD</code>와 <code>AGENTS.md</code>만으로 방향을 제어했습니다. 상위 기획 문서 업데이트를 통한 <b>'Vibe Control'</b>로만 단 며칠만에 서비스를 구현했습니다.</p>
+              <ul style="font-size: 1.05rem; list-style-type: '⚡ '; margin: 0;">
+                <li>복잡한 로직 설계 없이 목적과 요구사항만 명세</li>
+                <li>개발자는 코드를 읽지 않고 기획에 집중</li>
+              </ul>
             </div>
-            <div style="flex: 1;">
-              <div class="card" style="background: rgba(255, 255, 255, 0.03); font-size: 0.95rem; border-style: dashed; padding: 1.5rem;">
-                <h4 style="color: var(--accent-primary); margin-bottom: 0.8rem; font-size: 1.1rem;">AGENTS.md: AI 작업 원칙</h4>
-                <code>- 변경 계획을 TODO.md에 반영할 것<br>
-                - PRD/SRS 요구사항 충족 여부 상시 검증<br>
-                - 구현 시 자체 주석 최소화, 복잡 로직만 설명<br>
-                - 검증 결과 요약 및 TODO 업데이트 필수</code>
+            <div style="flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+              <span style="display: block; font-size: 0.95rem; margin-bottom: 0.8rem; opacity: 0.8;">Phase 1: 기능 기반 프로토타입 (Claude / Cursor)</span>
+              <img src="camping-alert-old/dashboard.png" class="zoomable-img" style="width: 100%; border-radius: 12px; border: 1px solid var(--glass-border); box-shadow: 0 5px 20px rgba(0,0,0,0.5);" alt="구버전">
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div style="display: flex; gap: 2rem; align-items: stretch;">
+            <div style="flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+              <span style="display: block; font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--accent-primary);">Phase 2: Stitch 통과 후의 심미성 확보</span>
+              <img src="camping-alert-new/dashboard.png" class="zoomable-img" style="width: 100%; border-radius: 12px; border: 2px solid var(--accent-primary); box-shadow: 0 0 25px rgba(110,231,183,0.3);" alt="신버전">
+            </div>
+            <div style="flex: 1; background: rgba(110,231,183,0.05); border-radius: 16px; padding: 2.5rem; border-right: 4px solid var(--accent-primary); text-align: right;">
+              <h3 style="color: var(--accent-primary); margin-top: 0;">2. StitchMCP를 통한 디자인 혁신</h3>
+              <p style="font-size: 1.15rem; line-height: 1.7;">프로토타입의 밋밋한 UI를 극복하기 위해 <b>StitchMCP</b>를 도입했습니다. 자연어 프롬프트만으로 일관된 토큰을 적용하여, 전문 퍼블리셔 수준의 심미성을 단번에 확보하고 배포에 성공했습니다.</p>
+              <div style="margin-top: 2rem;">
+                <a href="https://camp.kimohy.kr/" target="_blank" style="color: #000; text-decoration: none; font-weight: 700; font-size: 1.1rem; background: var(--accent-gradient); padding: 0.8rem 1.5rem; border-radius: 8px; display: inline-block;">🔗 camp.kimohy.kr 실서비스 방문</a>
               </div>
             </div>
           </div>
-          
-          <!-- Bottom: Friend's Project -->
-          <div style="display: flex; gap: 2.5rem; align-items: center;">
-            <div style="flex: 0.4; text-align: center;">
-              <div style="font-size: 5rem; margin-bottom: 1rem;">😲</div>
-              <h3 style="color: #fff; font-size: 2rem;">문과생<br>회계사 친구의<br>반격</h3>
-            </div>
-            <div style="flex: 1.6;">
-              <div class="card" style="background: rgba(59, 130, 246, 0.1); border-color: var(--accent-secondary); padding: 2.5rem;">
-                <p style="font-size: 1.4rem; color: #fff; font-weight: 600; margin-bottom: 1.5rem;">
-                  "단 하루 만에 똑같은, 아니 더 나은 서비스를 만들어왔다."
-                </p>
-                <div style="display: flex; gap: 3rem; align-items: flex-start;">
-                  <ul style="font-size: 1.1rem; list-style-type: '✅ '; margin-bottom: 0; flex: 1;">
-                    <li>사용한 툴: 오직 <b>Claude Code</b></li>
-                    <li>전략: "컨셉과 UI만 있으면 구현은 딸깍"</li>
-                    <li>결과: 도메인 전문가가 코딩 실력을 이김</li>
+
+          <!-- Phase 3 -->
+          <div style="background: rgba(59, 130, 246, 0.1); border-radius: 16px; padding: 2.5rem 3rem; border: 1px solid var(--accent-secondary); margin-top: 1rem;">
+            <div style="display: flex; gap: 3rem; align-items: center;">
+              <div style="font-size: 5rem; line-height: 1;">😲</div>
+              <div style="flex: 1;">
+                <h3 style="color: #fff; font-size: 1.8rem; margin: 0 0 1rem 0;">3. 문과생 지인의 반격: "코드실력보다 도메인"</h3>
+                <p style="font-size: 1.3rem; color: #fff; font-weight: 600; margin-bottom: 1.5rem;">"단 하루 만에 똑같은, 아니 더 훌륭한 서비스를 만들어왔다."</p>
+                <div style="display: flex; justify-content: space-between; align-items: flex-end;">
+                  <ul style="font-size: 1.1rem; list-style-type: '✅ '; margin: 0; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;">사용 툴: 코드 지식 없이 <b>Claude Code</b> 하나만 사용</li>
+                    <li>시사점: 구현 장벽의 붕괴. 이제 <b>도메인 지식과 기획의도</b>가 성패를 좌우함</li>
                   </ul>
-                  <div style="flex: 1; text-align: right;">
-                    <a href="https://field.solver.so/" target="_blank" style="color: var(--accent-secondary); text-decoration: none; font-weight: 700; font-size: 1.2rem; border: 2px solid var(--accent-secondary); padding: 0.6rem 1.2rem; border-radius: 8px; display: inline-block;">🔗 field.solver.so</a>
-                    <p style="margin-top: 1rem; font-weight: 800; color: var(--accent-primary); font-size: 1.4rem;">
-                      도메인을 아는 사람이<br>승리하는 시대
-                    </p>
+                  <div style="text-align: right;">
+                    <a href="https://field.solver.so/" target="_blank" style="color: var(--accent-secondary); text-decoration: none; font-weight: 700; font-size: 1.1rem; border: 2px solid var(--accent-secondary); padding: 0.6rem 1.2rem; border-radius: 8px;">🔗 field.solver.so</a>
                   </div>
                 </div>
               </div>
@@ -352,7 +350,7 @@
       <div class="glass-container">
         <h2 class="title-gradient">현업에서 당장 시도해볼 것들</h2>
         <div class="grid-2">
-          <div class="card">
+          <div class="card flex-column">
             <h3>우선은 Cursor 100% 활용</h3>
             <p>남들이 잘 만들어놓은 <b>하니스(Harness)</b>와<br>
             <b>프롬프트 템플릿</b>을 팀 문화에 이식해봅니다.</p>
@@ -360,7 +358,7 @@
               "제발 사내에 클로드 코드나<br>반중력(Antigravity)이 도입되길..."
             </p>
           </div>
-          <div class="card">
+          <div class="card flex-column">
             <h3>가상 엔지니어링 팀 (gstack)</h3>
             <p>한 명이 20명 팀의 역량을 갖추는 워크플로우</p>
             <ul style="font-size: 1.1rem; list-style-type: '⚡ ';">
@@ -377,8 +375,10 @@
     </div>
 
     <!-- Slide 8: Opinions & Conclusion -->
-    <div class="slide">
-      <div class="glass-container text-center" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: auto; min-height: 80vh; padding: 3rem;">
+    <div class="slide" style="align-items: flex-start; padding-top: 4rem;">
+      <div class="glass-container text-center" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem 4rem;">
+        <div style="margin-top: auto; margin-bottom: auto; width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <h2 class="title-gradient" style="font-size: 2.5rem; margin-bottom: 1rem;">결론: 개발자의 새로운 무기</h2>
         <h2 class="title-gradient" style="font-size: 3.2rem; border: none; padding: 0; margin-bottom: 2rem;">Vibe Coding: 새로운 시대의 문법</h2>
         
         <p style="font-size: 1.4rem; color: #fff; margin-bottom: 1.5rem; line-height: 1.6;">
@@ -403,6 +403,7 @@
           기술 너머의 본질을 봅니다.<br>
           <span style="opacity: 0.8;">- 2026. 04. Vibe Coding Presentation -</span>
         </p>
+        </div>
       </div>
     </div>
 
@@ -410,6 +411,26 @@
 
   <div class="nav-dots"></div>
 
-  <script src="script.js"></script>
+  <!-- Image Modal for Zoom -->
+  <div id="image-modal" class="image-modal" onclick="this.classList.remove('show')">
+    <span class="close-modal">&times;</span>
+    <img id="modal-img" class="modal-img-content">
+  </div>
+
+  <script src="script.js?v=3"></script>
+  <script>
+    // 강제 인라인 위임 이벤트 (캐싱이나 DOM 로드 우회)
+    document.addEventListener('click', function(e) {
+      if (e.target && e.target.classList.contains('zoomable-img')) {
+        e.stopPropagation();
+        var modal = document.getElementById('image-modal');
+        var modalImg = document.getElementById('modal-img');
+        if (modal && modalImg) {
+          modalImg.src = e.target.src;
+          modal.classList.add('show');
+        }
+      }
+    });
+  </script>
 </body>
 </html>

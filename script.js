@@ -51,4 +51,26 @@ document.addEventListener('DOMContentLoaded', () => {
       answer.classList.toggle('show');
     }
   };
+
+  // Image Zoom Logic
+  const zoomableImgs = document.querySelectorAll('.zoomable-img');
+  const modal = document.getElementById('image-modal');
+  const modalImg = document.getElementById('modal-img');
+
+  zoomableImgs.forEach(img => {
+    img.style.cursor = 'zoom-in'; // 커서 스타일 강제
+    img.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (modal && modalImg) {
+        modalImg.src = img.src;
+        modal.classList.add('show');
+      }
+    });
+  });
+
+  if (modal) {
+    modal.addEventListener('click', () => {
+      modal.classList.remove('show');
+    });
+  }
 });
